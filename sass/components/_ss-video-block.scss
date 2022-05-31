@@ -1,0 +1,36 @@
+.video-block {
+    padding: 2rem;
+    border-radius: 13px;
+
+    &__content {
+        span {
+            color: $white;
+            display: inline-block;
+
+            a {
+                color: $white;
+                display: block;
+                transition: all 0.3s;
+
+                @include media-breakpoint-up(xl) {
+                    margin-bottom: 0.7rem;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: $red-100;
+                }
+
+                i {
+                    line-height: 1;
+                    @include font-size(2.5rem);
+
+                    @include media-breakpoint-up(xl) {
+                        @include font-size(3.5rem);
+                        margin-bottom: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
