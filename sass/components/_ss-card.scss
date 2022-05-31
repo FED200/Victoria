@@ -13,14 +13,23 @@
         }
 
         &:hover {
-            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+            .card-product__media {
+                img {
+                    transform: scale(1.1);
+                }
+            }
         }
 
         &__media {
+            overflow: hidden;
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+
             img {
                 width: 100%;
-                border-top-left-radius: 13px;
-                border-top-right-radius: 13px;
+                transition: all 0.3s;
             }
         }
 
@@ -63,9 +72,10 @@
                 @include font-size(1.125rem);
             }
 
-            a{
+            a {
                 color: inherit;
-                text-decoration: none;               
+                text-decoration: none;
+                transition: all 0.3s;
             }
         }
 
@@ -74,6 +84,7 @@
             color: $red-100;
             font-weight: 700;
             font-family: $font-georgia;
+            transition: all 0.3s;
 
             @include media-breakpoint-up(md) {
                 @include font-size(1rem);
@@ -86,6 +97,7 @@
             @include media-breakpoint-up(xl) {
                 @include font-size(1.5625rem);
             }
+
         }
     }
 
@@ -112,7 +124,7 @@
             right: 0;
             bottom: 0;
             background-color: rgba($blue-400, 0.66);
-            
+
             border-radius: 7px;
             z-index: -1;
 
@@ -139,7 +151,7 @@
                     }
                 }
             }
-            
+
         }
 
         &__content {
@@ -147,7 +159,7 @@
             font-weight: 600;
             line-height: 1.57;
             color: $white;
-            
+
 
             @include media-breakpoint-up(lg) {
                 opacity: 0;
@@ -168,7 +180,7 @@
                 }
             }
         }
-        
+
         &__icon {
             position: absolute;
             right: 0;

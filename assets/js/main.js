@@ -65,6 +65,21 @@ $(document).ready(function () {
 
 });
 
+//Banner Video Play/Pause
+$("#playBtn").click(function (e) {
+  e.preventDefault();
+  $("#bannerVideo").trigger("play");
+  $(this).css("display", "none");
+  $("#pauseBtn").css("display", "flex");
+});
+
+$("#pauseBtn").click(function (e) {
+  e.preventDefault();
+  $("#bannerVideo").trigger("pause");
+  $(this).css("display", "none");
+  $("#playBtn").css("display", "flex");
+});
+
 //site-content padding
 var headerHeight = $('.site-header').innerHeight();
 var siteContent = $('.site-content');
