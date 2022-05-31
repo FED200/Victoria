@@ -6,9 +6,8 @@
 
 //banenr
 .banner {
-
     &__content {
-        color: rgba($blue-200, .71);
+        color: rgba($blue-200, .71) !important;
         font-weight: 600;
 
         .btn-wrap {
@@ -44,6 +43,12 @@
                 &:hover,
                 &:focus {
                     color: $red-100;
+                }
+            }
+
+            .btn-circle {
+                @include media-breakpoint-down(sm) {
+                    display: none;
                 }
             }
         }
