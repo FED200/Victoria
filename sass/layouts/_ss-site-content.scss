@@ -1,0 +1,17 @@
+.recipe {
+    .slick { 
+        &-slider {
+            // padding: 0;
+            .slide {
+                &-item {
+                    padding: 0 10px;
+                }
+            } 
+        }
+    
+        &-list {
+            margin: 0 -10px;
+        }
+        
+    }
+}
