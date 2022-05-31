@@ -1,0 +1,16 @@
+.block-title {
+    .heading-primary {
+        color: $blue-100;
+        font-weight: 300;
+    }
+
+    .heading-secondary {
+        color: $blue-200;
+        font-weight: 700;
+        font-family: $font-georgia;
+
+        &--alt {
+            color: $white;
+        }
+    }
+}
