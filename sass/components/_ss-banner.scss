@@ -1,8 +1,57 @@
+.site-content {
+    @include media-breakpoint-up(lg) {
+        padding-top: 0 !important;
+    }
+}
 
+//banenr
+.banner {
+
+    &__content {
+        color: rgba($blue-200, .71);
+        font-weight: 600;
+
+        .btn-wrap {
+            a {
+                &:not(:last-child) {
+                    margin-right: 1rem;
+
+                    @include media-breakpoint-up(md) {
+                        margin-right: 1.5rem;
+                    }
+
+                    @include media-breakpoint-up(xl) {
+                        margin-right: 2.5625rem;
+                    }
+                }
+
+            }
+
+            .btn-watch {
+                color: rgba($blue-400, .51);
+                font-weight: 600;
+                text-decoration: none;
+                @include font-size(1rem);
+
+                @include media-breakpoint-up(lg) {
+                    @include font-size(1.125rem);
+                }
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+
+                &:hover,
+                &:focus {
+                    color: $red-100;
+                }
+            }
+        }
+    }
+}
 
 .block-title {
     h2 {
         color: $blue-200;
     }
 }
-

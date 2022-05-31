@@ -12,7 +12,7 @@
 	<div class="site-wrapper">
 		<header id="header" class="site-header">
 			<div class="container">
-				<nav class="site-nav">
+				<nav class="navbar navbar-expand-lg navbar-light">
 					<a class="navbar-brand" href="#"><img src="assets/images/voctorya-logo.png" width="131" height="55"
 							loading="lazy" alt="Header Logo"></a>
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -24,7 +24,7 @@
 					</button>
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
+						<ul class="navbar-nav mx-auto">
 							<li class="nav-item active">
 								<a class="nav-link" href="#">Menu</a>
 							</li>
@@ -39,16 +39,33 @@
 							</li>
 
 						</ul>
-						<form class="form-inline mt-lg-0 mt-1">
-							<button class="btn-search" type="submit"><i class="icon-search"></i></button>
-						</form>
 					</div>
-				</nav> <!-- / .site-nav -->
+				</nav> <!-- / .navbar -->
 			</div>
 
 		</header> <!-- / .site-header -->
 
 		<main id="main" class="site-content">
+			<section class="banner bg-cover">
+				<img src="assets/images/banner-bg.jpg" alt="Banner image" width="1382" height="798" loading="lazy">
+				<div class="container">
+					<div class="banner__content text-center text-lg-left py-xl-8 py-md-6 py-sm-4 py-2">
+						<div class="block-title block-mw-68">
+							<h1 class="heading-primary mb-1 mb-lg-2">Good food choices are good investments.</h1>
+							<p>There is a powerful need for symbolism, and that means the architecture must have
+								something
+								that
+								appeals to the human heart.</p>
+						</div> <!-- /.block-title -->
+						<div class="btn-wrap pt-1 pt-lg-2">
+							<a href="#" class="btn btn-primary">Order now</a>
+							<a href="#" class="btn-watch">Watch our story</a>
+							<a href="#" class="btn btn-circle"><i class="icon-play"></i></a>
+						</div>
+					</div> <!-- /.banner__content -->
+				</div>
+			</section> <!-- / .banner -->
+
 			<div class="container">
 
 				<hr>
@@ -61,31 +78,37 @@
 				<h5>Heading</h5>
 				<h6>Heading</h6>
 
-				<hr>
-				<hr>
 				<h2>
-					<em>[.button]</em>
+					<em>[.buttons]</em>
 				</h2>
 				<a href="#" class="btn btn-primary">Order now</a>
+				<a href="#" class="btn btn-circle"><i class="icon-play"></i></a>
 				<a href="#" class="btn btn-primary btn-icon">Subscribre <i class="icon-send"></i></a>
 
 				<hr>
 				<hr>
 				<h2>
-					<em>[.block-titles]</em>
+					<em>[.block-titles .heading-primary]</em>
 				</h2>
-				<div class="block-title block-mw-69">
+				<div class="block-title block-mw-68">
 					<h1 class="heading-primary">Good food choices are good investments.</h1>
 				</div> <!-- /.block-title -->
-
+				<hr>
+				<h2>
+					<em>[.block-titles .heading-secondary]</em>
+				</h2>
 				<div class="block-title block-mw-54">
 					<h2 class="heading-secondary">The best comfort food will always be greens, cornbread, and fried
 						chicken.
 					</h2>
 				</div> <!-- /.block-title -->
+				<hr>
 
+				<h2>
+					<em>[.block-titles .heading-secondary .text-white]</em>
+				</h2>
 				<div class="block-title bg-dark block-mw-83">
-					<h2 class="heading-secondary heading-secondary--alt">The best comfort food will always be greens,
+					<h2 class="heading-secondary text-white">The best comfort food will always be greens,
 						cornbread, and fried chicken.</h2>
 				</div> <!-- /.block-title -->
 
@@ -95,7 +118,8 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<article class="bg-cover card-hover">
-							<img src="assets/images/recipe-img01.jpg" width="348" height="350" loading="lazy" alt="Recipe image">
+							<img src="assets/images/recipe-img01.jpg" width="348" height="350" loading="lazy"
+								alt="Recipe image">
 
 							<div class="card-hover__content">
 								<a href="#" class="stretched-link">
@@ -266,14 +290,15 @@
 					<div class="container">
 						<div class="video-block__content text-center">
 							<div class="block-title block-mw-83 mx-auto text-center text-white mb-lg-2 mb-1">
-								<h2 class="heading-secondary text-white mb-1">When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+								<h2 class="heading-secondary text-white mb-1">When a man's stomach is full it makes no
+									difference whether he is rich or poor.</h2>
 								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 									tempor
 									invidunt ut labore et dolore magna.</p>
 							</div> <!-- /.block-title -->
 							<span>
-								<a href="#"><i class="icon-play-bordered"></i></a>								
-								Watch our story	
+								<a href="#"><i class="icon-play-bordered"></i></a>
+								Watch our story
 							</span>
 						</div>
 					</div>

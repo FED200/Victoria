@@ -9,7 +9,8 @@
     @include font-size(1rem);
     padding: .75rem 1.25rem;
     min-width: 11.25rem;
-    transition: all .3s;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 15px 29px rgba(249, 129, 105, 0.68);
 
     @include media-breakpoint-up(md) {
         min-width: 12.8125rem;
@@ -26,13 +27,20 @@
     &:active {
         color: $white;
         background-color: $blue-100;
-        box-shadow: 0px 15px 29px rgba(249, 129, 105, 0.68);
+        box-shadow: none;
     }
 
     &.btn-primary {
         text-transform: capitalize;
         background-color: $red-100;
         border-color: $red-100;
+
+        &:hover,
+        &:active {
+            color: $white;
+            background-color: $blue-100;
+            border-color: $blue-100;
+        }
     }
 
     &.btn-icon {
@@ -61,6 +69,19 @@
                 margin-left: 1rem;
 
             }
+        }
+    }
+
+    &.btn-circle {
+        min-width: 3.125rem;
+        border-radius: 50%;
+
+        @include media-breakpoint-up(md) {
+            min-width: 3.5rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 3.875rem;
         }
     }
 }
