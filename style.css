@@ -11210,6 +11210,117 @@ iframe {
   height: 100%;
 }
 
+.block-width-100 {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.block-width-120xll {
+  max-width: 1200px;
+}
+
+@media (min-width: 992px) {
+  .block-width-99 {
+    max-width: 61.875rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-90 {
+    max-width: 56.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-95 {
+    max-width: 59.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-88 {
+    max-width: 880px;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-87 {
+    max-width: 54.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-80 {
+    max-width: 50rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-85 {
+    max-width: 53.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-70 {
+    max-width: 43.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-75 {
+    max-width: 46.875rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-60 {
+    max-width: 37.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-65 {
+    max-width: 40.625rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-50 {
+    max-width: 31.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-55 {
+    max-width: 34.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-40 {
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-45 {
+    max-width: 28.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-30 {
+    max-width: 18.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-35 {
+    max-width: 21.875rem;
+  }
+}
+
 @media (min-width: 992px) {
   .block-mw-83 {
     max-width: 835px;
