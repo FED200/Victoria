@@ -11224,6 +11224,108 @@ iframe {
   }
 }
 
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  background-color: #F98169;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.625rem 1.25rem;
+  min-width: 11.1875rem;
+  transition: all .2s;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.125rem;
+    min-width: 12.1875rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn {
+    font-size: 1.25rem;
+    min-width: 14.1875rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .btn {
+    font-size: calc(1.2625rem + 0.15vw) ;
+  }
+}
+
+.btn:hover, .btn:focus, .btn.focus, .btn:active, .btn.active {
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.3);
+}
+
+.btn.btn-primary {
+  background-color: #007bff;
+}
+
+.btn.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn.btn-tertiary {
+  color: #6c757d;
+  font-size: 0.875rem;
+  padding: 0.3125rem 0.3125rem 0.3125rem 0;
+  min-width: auto;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.btn.btn-tertiary:hover, .btn.btn-tertiary:focus, .btn.btn-tertiary.focus, .btn.btn-tertiary:active, .btn.btn-tertiary.active {
+  transform: none;
+  box-shadow: none;
+}
+
+.btn.btn-tertiary:hover i, .btn.btn-tertiary:focus i, .btn.btn-tertiary.focus i, .btn.btn-tertiary:active i, .btn.btn-tertiary.active i {
+  margin-left: 0.5rem;
+}
+
+.btn.btn-tertiary i {
+  margin-left: 3px;
+  font-size: 12px;
+  transition: all .2s;
+}
+
+.btn.btn-tertiary--alt {
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .btn.btn-tertiary--alt {
+    font-size: 1.25rem;
+  }
+}
+
+.btn.btn-icon i {
+  margin-left: 0.4375rem;
+  position: relative;
+  top: 2px;
+}
+
+@media (min-width: 992px) {
+  .btn.btn-icon i {
+    margin-left: 0.625rem;
+  }
+}
+
 .block-title .heading-primary {
   color: #255A7E;
   font-weight: 300;
