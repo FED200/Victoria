@@ -1,4 +1,8 @@
 .block-title {
+    @include font-size(1rem);
+    color: $grayish-blue-2;
+    line-height:1.6;
+
     .heading-primary {
         color: $blue-100;
         font-weight: 300;

@@ -1,0 +1,91 @@
+.card {
+    &-product {
+        background-color: $white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 13px;
+        height: 100%;
+        position: relative;
+        transition: all 0.3s;
+
+        @include media-breakpoint-down(sm) {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+
+        &__media {
+            img {
+                width: 100%;
+                border-top-left-radius: 13px;
+                border-top-right-radius: 13px;
+            }
+        }
+
+        &__content {
+            @include font-size(0.875rem);
+            color: $grayish-blue-2;
+            font-family: $font-muli;
+            font-weight: 600;
+            line-height: 1.3;
+            padding: 1rem;
+
+            @include media-breakpoint-up(md) {
+                padding: 1.3875rem 1rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding: 1.6875rem 1.25rem;
+            }
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__title {
+            @include font-size(0.8rem);
+            color: $blue-200;
+            font-weight: 700;
+            font-family: $font-georgia;
+            margin-bottom: 0;
+            padding-right: 1rem;
+
+            @include media-breakpoint-up(md) {
+                @include font-size(1rem);
+            }
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.125rem);
+            }
+
+            a{
+                color: inherit;
+                text-decoration: none;               
+            }
+        }
+
+        &__price {
+            @include font-size(0.8rem);
+            color: $red-100;
+            font-weight: 700;
+            font-family: $font-georgia;
+
+            @include media-breakpoint-up(md) {
+                @include font-size(1rem);
+            }
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.375rem);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(1.5625rem);
+            }
+        }
+    }
+}
