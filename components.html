@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="vendors/fancybox/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="style.css">
 	<title>Victoria | components</title>
 </head>
@@ -286,11 +287,9 @@
 				<hr>
 				<hr>
 				<h2><em>.video-block</em></h2>
-				<section class="video-block bg-dark mb-3">
+				<section class="video-block bg-cover overlay-blue mb-3">
+					<img src="assets/images/video-bg.jpg" width="1063" height="457" loading="lazy" alt="Video Block Bg">
 					<div class="container">
-						<video width="1200" height="457" id="bannerVideo" src="">
-							<source src="assets/videos/demo-video.mp4" type="video/mp4">
-						</video>
 						<div class="video-block__content text-center">
 							<div class="block-title block-width-85 mx-auto text-center text-white mb-lg-2 mb-1">
 								<h2 class="heading-secondary text-white mb-1">When a man's stomach is full it makes no
@@ -300,8 +299,8 @@
 									invidunt ut labore et dolore magna.</p>
 							</div> <!-- /.block-title -->
 							<span>
-								<button class="play-btn" id="playBtn"><i class="icon-play"></i></button>
-								<button class="play-btn" id="playBtn"></button>
+								<a href="https://www.youtube.com/watch?v=2E93KHqU2s4" data-fancybox><i
+										class="icon-play-bordered"></i></a>
 								Watch our story
 							</span>
 						</div>
@@ -317,6 +316,7 @@
 	</div> <!-- / .site-wrapper -->
 
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="vendors/fancybox/jquery.fancybox.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
 
