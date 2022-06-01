@@ -12070,6 +12070,18 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 100;
 }
 
+@media (min-width: 992px) {
+  .site-header {
+    padding: 1rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-header {
+    padding: 2rem 0;
+  }
+}
+
 @media (max-width: 991.98px) {
   .site-header {
     position: fixed;
@@ -12085,22 +12097,20 @@ h1, h2, h3, h4, h5, h6 {
 .site-header.sticky-header {
   background-color: #fff;
   box-shadow: 0 0.625rem 1.25rem rgba(250, 194, 64, 0.3);
+  padding-top: 6px;
+  padding-bottom: .375rem;
+  transition: all .2s ease-in-out;
 }
 
-.site-header.sticky-header .navbar {
-  padding: 1rem;
-}
-
-@media (min-width: 992px) {
-  .site-header .navbar {
-    padding: 1.5rem 0;
+@media (max-width: 1199.98px) {
+  .site-header.sticky-header .navbar {
+    padding: .5rem 1rem;
   }
 }
 
-@media (min-width: 1200px) {
-  .site-header .navbar {
-    padding: 3rem 0;
-  }
+.site-header .navbar {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .site-header .navbar-brand img {
@@ -12128,7 +12138,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991.98px) {
   .site-header .navbar-nav .nav-item {
     text-align: center;
-    background-color: #dc3545;
+    background-color: #F98169;
     border-bottom: 1px solid #fff;
   }
 }
@@ -12215,6 +12225,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 100;
     background-color: #fff;
     padding: 3rem 1rem;
+    height: 100%;
+    transition: all .3s;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
   }
 }
