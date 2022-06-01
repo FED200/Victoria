@@ -71,17 +71,4 @@
             }
         }
     }
-
-    &.btn-circle {
-        min-width: 3.125rem;
-        border-radius: 50%;
-
-        @include media-breakpoint-up(md) {
-            min-width: 3.5rem;
-        }
-
-        @include media-breakpoint-up(xl) {
-            min-width: 3.875rem;
-        }
-    }
 }

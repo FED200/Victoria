@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="vendors/slick/slick.css">
 	<link rel="stylesheet" href="vendors/fancybox/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="style.css">
 	<title>Victoria | components</title>
@@ -25,7 +26,7 @@
 					</button>
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mx-auto">
+						<ul class="navbar-nav">
 							<li class="nav-item active">
 								<a class="nav-link" href="#">Menu</a>
 							</li>
@@ -47,21 +48,21 @@
 		</header> <!-- / .site-header -->
 
 		<main id="main" class="site-content">
-			<section class="banner bg-cover">
+			<section class="banner bg-cover py-xl-5 py-md-3 py-1">
 				<img src="assets/images/banner-bg.jpg" alt="Banner image" width="1382" height="798" loading="lazy">
 				<div class="container">
-					<div class="banner__content text-center text-lg-left py-xl-8 py-md-6 py-sm-4 py-2">
+					<div class="banner__content text-center text-lg-left py-1">
 						<div class="block-title block-mw-68">
 							<h1 class="heading-primary mb-1 mb-lg-2">Good food choices are good investments.</h1>
 							<p>There is a powerful need for symbolism, and that means the architecture must have
-								something
-								that
-								appeals to the human heart.</p>
+								something that appeals to the human heart.</p>
 						</div> <!-- /.block-title -->
 						<div class="btn-wrap pt-1 pt-lg-2">
 							<a href="#" class="btn btn-primary">Order now</a>
 							<a href="#" class="btn-watch">Watch our story</a>
-							<a href="#" class="btn btn-circle"><i class="icon-play"></i></a>
+							<span>
+								<a href="#" class="btn-circle" data-fancybox><i class="icon-play"></i></a>
+							</span>
 						</div>
 					</div> <!-- /.banner__content -->
 				</div>
@@ -325,14 +326,63 @@
 			</section>
 		</main> <!-- / .site-content -->
 
-		<footer id="footer" class="site-footer">
+		
+		<footer id="footer" class="site-footer bg-cover">
+			<img src="assets/images/footer-img.jpg" alt="Footer bg-image" width="1295" height="742" loading="lazy">
+			<div class="container">
+				<div class="site-footer__wrap mb-lg-2 mb-1">
+					<div class="site-footer__content mb-1">
+						<a class="navbar-brand mr-0 mr-md-1" href="#"><img src="assets/images/voctorya-logo.png"
+								width="131" height="55" loading="lazy" alt="Header Logo"></a>
+						<ul class="site-footer__nav list-unstyled d-flex pl-lg-3">
+							<li class="nav-item">
+								<a href="#" class="nav-link active">Menu</a></li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Package</a></li>
+							</li>
 
+							<li class="nav-item">
+								<a href="#" class="nav-link">About Us</a></li>
+							</li>
+
+							<li class="nav-item">
+								<a href="#" class="nav-link"> Contact us</a></li>
+							</li>
+						</ul> <!-- / .site-footer__nav -->
+					</div> <!-- / .site-footer__content-->
+
+					<div class="social-icons">
+						<ul class="list-unstyled d-flex">
+							<li>
+								<a href="#"><i class="icon-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="icon-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="icon-instagram"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="icon-whatsapp"></i></a>
+							</li>
+						</ul>
+					</div> <!-- / .social-icons -->
+				</div> <!-- / .site-footer__wrap -->
+
+				<div class="copyright-block text-center text-lg-left p-1">
+					<span class="copyright">Copyright&copyArifur Rahman, 2019. All rights reserved</span>
+				</div> <!-- / .copyright-block -->
+			</div>
 		</footer> <!-- / .site-footer -->
 
 	</div> <!-- / .site-wrapper -->
 
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="vendors/slick/slick.min.js"></script>
 	<script src="vendors/fancybox/jquery.fancybox.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+	</script>
 	<script src="assets/js/main.js"></script>
 </body>
 

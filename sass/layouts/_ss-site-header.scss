@@ -18,11 +18,19 @@
     &.sticky-header {
         background-color: $white;
         box-shadow: 0 0.625rem 1.25rem rgba(250, 194, 64, .3);
+
+        .navbar {
+            padding: 1rem;
+        }
     }
 
     .navbar {
         @include media-breakpoint-up(lg) {
-            padding: 1rem;
+            padding: 1.5rem 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 3rem 0;
         }
 
         &-brand {
@@ -36,6 +44,10 @@
         }
 
         &-nav {
+            @include media-breakpoint-up(lg) {
+                margin-left: 126px;
+            }
+
             .nav-item {
                 @include media-breakpoint-up(lg) {
                     margin-right: 1.2rem;
@@ -50,6 +62,7 @@
                 &.active {
                     .nav-link {
                         color: $blue-300;
+                        font-weight: 700;
 
                         @include media-breakpoint-up(lg) {
                             color: $blue-300;

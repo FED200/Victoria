@@ -6,11 +6,47 @@
 
 //banenr
 .banner {
+    display: flex;
+    min-height: 340px;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include media-breakpoint-up(sm) {
+        min-height: 420px;
+    }
+
+    @include media-breakpoint-up(md) {
+        min-height: 520px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-height: 660px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-height: 798px;
+    }
+
     &__content {
-        color: rgba($blue-200, .71) !important;
-        font-weight: 600;
+        .block-title {
+            font-weight: 600;
+            line-height: 26px;
+            color: rgba($blue-200, .71);
+
+            h1 {
+                line-height: 57px;
+                font-family: $font-muli;
+            }
+        }
 
         .btn-wrap {
+            display: flex;
+            align-items: center;
+
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+            }
+
             a {
                 &:not(:last-child) {
                     margin-right: 1rem;
@@ -47,16 +83,33 @@
             }
 
             .btn-circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 55px;
+                height: 50px;
+                border-radius: 30px;
+                background-color: $red-100;
+                color: $white;
+                text-decoration: none;
+                transition: all .3s;
+                box-shadow: 0px 15px 29px rgba(249, 129, 105, 0.68);
+
+                @include media-breakpoint-up(lg) {
+                    width: 62px;
+                    height: 60px;
+                }
+
+                &:hover,
+                &:focus {
+                    box-shadow: none;
+                    background-color: $blue-100;
+                }
+
                 @include media-breakpoint-down(sm) {
                     display: none;
                 }
             }
         }
-    }
-}
-
-.block-title {
-    h2 {
-        color: $blue-200;
     }
 }
