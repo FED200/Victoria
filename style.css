@@ -11904,32 +11904,34 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 7px;
 }
 
-.video-block {
+.video-block__content {
   padding: 1rem;
   border-radius: 13px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   overflow: hidden;
   max-width: 1067px;
   margin: 0 auto;
 }
 
-@media (min-width: 992px) {
-  .video-block {
-    padding: 2rem;
+@media (min-width: 768px) {
+  .video-block__content {
+    padding: 3rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .video-block {
+  .video-block__content {
     min-height: 457px;
   }
 }
 
-.video-block__content .block-title p {
-  max-width: 577px;
-  margin: 0 auto;
+@media (max-width: 991.98px) {
+  .video-block__content .block-title br {
+    display: none;
+  }
 }
 
 .video-block__content span {

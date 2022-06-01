@@ -1,28 +1,29 @@
 .video-block {
-    padding: 1rem;
-    border-radius: 13px;
-    display: flex;
-    // justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    max-width: 1067px;
-    margin: 0 auto;
-
-    @include media-breakpoint-up(lg) {
-        padding: 2rem;
-
-    }
-
-    @include media-breakpoint-up(xl) {
-        min-height: 457px;
-    }
-
     &__content {
+        padding: 1rem;
+        border-radius: 13px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        max-width: 1067px;
+        margin: 0 auto;
+
+
+        @include media-breakpoint-up(md) {
+            padding: 3rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: 457px;
+        }
+
         .block-title {
-            p {
-                max-width: 577px;
-                margin: 0 auto;
+            br {
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
             }
         }
 
