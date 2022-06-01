@@ -1,17 +1,148 @@
 .recipe {
-    .slick { 
+    .slick {
         &-slider {
+
             // padding: 0;
             .slide {
                 &-item {
                     padding: 0 10px;
                 }
-            } 
+            }
         }
-    
+
         &-list {
             margin: 0 -10px;
         }
-        
+
+    }
+}
+
+//subscribe
+.subscribe {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+    padding: 1rem;
+
+    @include media-breakpoint-up(md) {
+        min-height: 313px;
+        padding: 2rem;
+
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-height: 413px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-height: 613px;
+    }
+
+    &-content {
+        max-width: 1055px;
+        margin: 0 auto;
+        width: 100%;
+        background-color: $white;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        border-radius: 13px;
+        padding: 4rem 1rem;
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+            padding:3rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 3rem 5rem;
+        }
+
+        &::before {
+            @include media-breakpoint-up(lg) {
+                position: absolute;
+                content: '';
+                top: -60px;
+                left: -60px;
+                height: 242px;
+                width: 242px;
+                background: url('assets/images/dotted-bg.png');
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+        }
+
+        &::after {
+            @include media-breakpoint-up(lg) {
+                position: absolute;
+                content: '';
+                right: -60px;
+                bottom: -60px;
+                height: 242px;
+                width: 242px;
+                background: url('assets/images/dotted-bg.png');
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+
+        &-group {
+            margin-bottom: 0;
+            max-width: 485px;
+            width: 100%;
+        }
+
+        &-control {
+            height: 100%;
+            border-radius: 13px 0 0 13px;
+            padding: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                padding: 1rem 1rem 1rem 2rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding: 2rem 1rem 2rem 2rem;
+            }
+
+            &::placeholder {
+                color: $grayish-cyan;
+                line-height: 1.9;
+                font-family: $font-muli;
+                @include font-size(0.875rem);
+
+                @include media-breakpoint-up(sm) {
+                    @include font-size(1.125rem);
+                }
+                @include media-breakpoint-up(lg) {
+                    @include font-size(1.3125rem);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include font-size(1.5rem);
+                }
+            }
+        }
+
+        .btn-wrap {
+            .btn-primary {
+                @include media-breakpoint-down(sm) {
+                    @include font-size(0);
+                    min-width: 0;
+                }
+
+                i {
+                    @include media-breakpoint-down(sm) {
+                        @include font-size(1.5rem);
+                        margin-left: 0;
+
+                    }
+                }
+            }
+        }
     }
 }

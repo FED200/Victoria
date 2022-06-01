@@ -11940,6 +11940,7 @@ h1, h2, h3, h4, h5, h6 {
 .video-block__content span a {
   color: #fff;
   display: block;
+  line-height: 1;
   transition: all 0.3s;
 }
 
@@ -12128,6 +12129,170 @@ h1, h2, h3, h4, h5, h6 {
 
 .recipe .slick-list {
   margin: 0 -10px;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: auto;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    min-height: 313px;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .subscribe {
+    min-height: 413px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    min-height: 613px;
+  }
+}
+
+.subscribe-content {
+  max-width: 1055px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 13px;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .subscribe-content {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe-content {
+    padding: 3rem 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .subscribe-content::before {
+    position: absolute;
+    content: '';
+    top: -60px;
+    left: -60px;
+    height: 242px;
+    width: 242px;
+    background: url("assets/images/dotted-bg.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 992px) {
+  .subscribe-content::after {
+    position: absolute;
+    content: '';
+    right: -60px;
+    bottom: -60px;
+    height: 242px;
+    width: 242px;
+    background: url("assets/images/dotted-bg.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+.subscribe .form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe .form-group {
+  margin-bottom: 0;
+  max-width: 485px;
+  width: 100%;
+}
+
+.subscribe .form-control {
+  height: 100%;
+  border-radius: 13px 0 0 13px;
+  padding: 1rem;
+}
+
+@media (min-width: 992px) {
+  .subscribe .form-control {
+    padding: 1rem 1rem 1rem 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe .form-control {
+    padding: 2rem 1rem 2rem 2rem;
+  }
+}
+
+.subscribe .form-control::placeholder {
+  color: #8B8E8F;
+  line-height: 1.9;
+  font-family: "Muli", sans-serif;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 576px) {
+  .subscribe .form-control::placeholder {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .subscribe .form-control::placeholder {
+    font-size: 1.3125rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .subscribe .form-control::placeholder {
+    font-size: calc(1.25625rem + 0.075vw) ;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe .form-control::placeholder {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .subscribe .form-control::placeholder {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .subscribe .form .btn-wrap .btn-primary {
+    font-size: 0;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .subscribe .form .btn-wrap .btn-primary i {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 1200px) {
+  .subscribe .form .btn-wrap .btn-primary i {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
