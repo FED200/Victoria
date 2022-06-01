@@ -67,9 +67,9 @@
     &-slider {
         padding: 0 0 4rem;
 
-        // @include media-breakpoint-up(lg) {
-        //     padding: 0 1rem;
-        // }
+        @include media-breakpoint-up(lg) {
+            padding: 0;
+        }
 
     }
 
@@ -104,9 +104,9 @@
         }
 
         &:hover {
-            background-color: $blue-200;
+            background-color: $red-100;
             color: $white;
-            border-color: $blue-200;
+            border-color: $red-100;
         }
     }
 

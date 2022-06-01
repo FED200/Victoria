@@ -116,6 +116,10 @@
             margin: 0 auto;
         }
 
+        @include media-breakpoint-down(xs) {
+            max-width: 300px;
+        }
+
         &::before {
             position: absolute;
             content: '';

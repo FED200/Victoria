@@ -42,22 +42,26 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    centerMode: true,
+    infinite: true,
     responsive: [{
         breakpoint: 992,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 3,
+          centerMode: false,
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 2,
         }
       },
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          centerMode: false,
         }
       }
     ]

@@ -1,8 +1,53 @@
-.recipe {
-    .slick {
-        &-slider {
+//about
+.about {
+    // min-height: 1437px;
 
+    &-media {
+
+        img {
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            box-shadow: 0 47px 99px $gray-400;
+        }
+
+        &__sm {
+            margin-bottom: 13px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                border-radius: 12px;
+
+                @include media-breakpoint-down(md) {
+                    object-fit: cover;
+                    width: 100%;
+                    font-family: 'object-fit: cover;';
+                }
+            }
+        }
+    }
+
+    .content {
+        @include font-size(1rem);
+        color: $grayish-cyan;
+        font-weight: 600;
+    }
+
+    &-block {
+        .content {
+            color: $grayish-blue-2;
+        }
+    }
+
+}
+
+//recipe
+.recipe {
+    .slick { 
+        &-slider {
             // padding: 0;
+            margin: 0 -6%;
             .slide {
                 &-item {
                     padding: 0 10px;
@@ -23,12 +68,10 @@
     align-items: center;
     text-align: center;
     min-height: auto;
-    padding: 1rem;
+    padding: 2rem;
 
     @include media-breakpoint-up(md) {
         min-height: 313px;
-        padding: 2rem;
-
     }
 
     @include media-breakpoint-up(lg) {
