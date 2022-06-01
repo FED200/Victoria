@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Muli';
-  src: url("fonts/Muli-Light.eot");
-  src: url("fonts/Muli-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Muli-Light.woff2") format("woff2"), url("fonts/Muli-Light.woff") format("woff"), url("fonts/Muli-Light.ttf") format("truetype"), url("fonts/Muli-Light.svg#Muli-Light") format("svg");
+  src: url("assets/fonts/Muli-Light.eot");
+  src: url("assets/fonts/Muli-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Muli-Light.woff2") format("woff2"), url("assets/fonts/Muli-Light.woff") format("woff"), url("assets/fonts/Muli-Light.ttf") format("truetype"), url("assets/fonts/Muli-Light.svg#Muli-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Muli';
-  src: url("fonts/Muli.eot");
-  src: url("fonts/Muli.eot?#iefix") format("embedded-opentype"), url("fonts/Muli.woff2") format("woff2"), url("fonts/Muli.woff") format("woff"), url("fonts/Muli.ttf") format("truetype"), url("fonts/Muli.svg#Muli") format("svg");
+  src: url("assets/fonts/Muli.eot");
+  src: url("assets/fonts/Muli.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Muli.woff2") format("woff2"), url("assets/fonts/Muli.woff") format("woff"), url("assets/fonts/Muli.ttf") format("truetype"), url("assets/fonts/Muli.svg#Muli") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Painter PERSONAL USE ONLY';
-  src: url("fonts/PainterPERSONALUSEONLY.eot");
-  src: url("fonts/PainterPERSONALUSEONLY.eot?#iefix") format("embedded-opentype"), url("fonts/PainterPERSONALUSEONLY.woff2") format("woff2"), url("fonts/PainterPERSONALUSEONLY.woff") format("woff"), url("fonts/PainterPERSONALUSEONLY.ttf") format("truetype"), url("fonts/PainterPERSONALUSEONLY.svg#PainterPERSONALUSEONLY") format("svg");
+  src: url("assets/fonts/PainterPERSONALUSEONLY.eot");
+  src: url("assets/fonts/PainterPERSONALUSEONLY.eot?#iefix") format("embedded-opentype"), url("assets/fonts/PainterPERSONALUSEONLY.woff2") format("woff2"), url("assets/fonts/PainterPERSONALUSEONLY.woff") format("woff"), url("assets/fonts/PainterPERSONALUSEONLY.ttf") format("truetype"), url("assets/fonts/PainterPERSONALUSEONLY.svg#PainterPERSONALUSEONLY") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Georgia';
-  src: url("fonts/Georgia-Bold.eot");
-  src: url("fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Georgia-Bold.woff2") format("woff2"), url("fonts/Georgia-Bold.woff") format("woff"), url("fonts/Georgia-Bold.ttf") format("truetype"), url("fonts/Georgia-Bold.svg#Georgia-Bold") format("svg");
+  src: url("assets/fonts/Georgia-Bold.eot");
+  src: url("assets/fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Georgia-Bold.woff2") format("woff2"), url("assets/fonts/Georgia-Bold.woff") format("woff"), url("assets/fonts/Georgia-Bold.ttf") format("truetype"), url("assets/fonts/Georgia-Bold.svg#Georgia-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: 'Georgia';
-  src: url("fonts/Georgia.eot");
-  src: url("fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("fonts/Georgia.woff2") format("woff2"), url("fonts/Georgia.woff") format("woff"), url("fonts/Georgia.ttf") format("truetype"), url("fonts/Georgia.svg#Georgia") format("svg");
+  src: url("assets/fonts/Georgia.eot");
+  src: url("assets/fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Georgia.woff2") format("woff2"), url("assets/fonts/Georgia.woff") format("woff"), url("assets/fonts/Georgia.ttf") format("truetype"), url("assets/fonts/Georgia.svg#Georgia") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11463,7 +11463,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   min-height: 340px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 @media (min-width: 576px) {
@@ -11481,6 +11481,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 992px) {
   .banner {
     min-height: 660px;
+    justify-content: flex-start;
   }
 }
 
@@ -11497,7 +11498,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner__content .block-title h1 {
-  line-height: 57px;
   font-family: "Muli", sans-serif;
 }
 
@@ -12069,6 +12069,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     z-index: 999;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
   }
 }
 
@@ -12139,7 +12140,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   transition: all 0.3s;
   text-transform: capitalize;
-  color: #ABADAE;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar-nav .nav-link {
+    color: #ABADAE;
+  }
 }
 
 .site-header .navbar-nav .nav-link:focus, .site-header .navbar-nav .nav-link:hover {
@@ -12430,9 +12437,26 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.site-footer {
+  position: relative;
+}
+
 .site-footer.bg-cover {
   background-size: 50%;
   background-position: right;
+}
+
+@media (min-width: 1200px) {
+  .site-footer:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    right: 0;
+    bottom: 0;
+    background: url("assets/images/footer-bg.png");
+    width: 457px;
+    height: 446px;
+  }
 }
 
 .site-footer__content {
@@ -12545,7 +12569,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -12595,6 +12618,8 @@ h1, h2, h3, h4, h5, h6 {
 .site-footer .copyright {
   color: #ABADAE;
   font-size: 1rem;
+  display: inline-block;
+  line-height: 1.7;
 }
 
 /*# sourceMappingURL=style.css.map */

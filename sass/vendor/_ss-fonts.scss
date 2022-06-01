@@ -22,12 +22,12 @@
 //Muli and georgia
 @font-face {
     font-family: 'Muli';
-    src: url('fonts/Muli-Light.eot');
-    src: url('fonts/Muli-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Muli-Light.woff2') format('woff2'),
-        url('fonts/Muli-Light.woff') format('woff'),
-        url('fonts/Muli-Light.ttf') format('truetype'),
-        url('fonts/Muli-Light.svg#Muli-Light') format('svg');
+    src: url('#{$font-path}/Muli-Light.eot');
+    src: url('#{$font-path}/Muli-Light.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Muli-Light.woff2') format('woff2'),
+        url('#{$font-path}/Muli-Light.woff') format('woff'),
+        url('#{$font-path}/Muli-Light.ttf') format('truetype'),
+        url('#{$font-path}/Muli-Light.svg#Muli-Light') format('svg');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -35,12 +35,12 @@
 
 @font-face {
     font-family: 'Muli';
-    src: url('fonts/Muli.eot');
-    src: url('fonts/Muli.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Muli.woff2') format('woff2'),
-        url('fonts/Muli.woff') format('woff'),
-        url('fonts/Muli.ttf') format('truetype'),
-        url('fonts/Muli.svg#Muli') format('svg');
+    src: url('#{$font-path}/Muli.eot');
+    src: url('#{$font-path}/Muli.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Muli.woff2') format('woff2'),
+        url('#{$font-path}/Muli.woff') format('woff'),
+        url('#{$font-path}/Muli.ttf') format('truetype'),
+        url('#{$font-path}/Muli.svg#Muli') format('svg');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -48,12 +48,12 @@
 
 @font-face {
     font-family: 'Painter PERSONAL USE ONLY';
-    src: url('fonts/PainterPERSONALUSEONLY.eot');
-    src: url('fonts/PainterPERSONALUSEONLY.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PainterPERSONALUSEONLY.woff2') format('woff2'),
-        url('fonts/PainterPERSONALUSEONLY.woff') format('woff'),
-        url('fonts/PainterPERSONALUSEONLY.ttf') format('truetype'),
-        url('fonts/PainterPERSONALUSEONLY.svg#PainterPERSONALUSEONLY') format('svg');
+    src: url('#{$font-path}/PainterPERSONALUSEONLY.eot');
+    src: url('#{$font-path}/PainterPERSONALUSEONLY.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/PainterPERSONALUSEONLY.woff2') format('woff2'),
+        url('#{$font-path}/PainterPERSONALUSEONLY.woff') format('woff'),
+        url('#{$font-path}/PainterPERSONALUSEONLY.ttf') format('truetype'),
+        url('#{$font-path}/PainterPERSONALUSEONLY.svg#PainterPERSONALUSEONLY') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -61,12 +61,12 @@
 
 @font-face {
     font-family: 'Georgia';
-    src: url('fonts/Georgia-Bold.eot');
-    src: url('fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Georgia-Bold.woff2') format('woff2'),
-        url('fonts/Georgia-Bold.woff') format('woff'),
-        url('fonts/Georgia-Bold.ttf') format('truetype'),
-        url('fonts/Georgia-Bold.svg#Georgia-Bold') format('svg');
+    src: url('#{$font-path}/Georgia-Bold.eot');
+    src: url('#{$font-path}/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Georgia-Bold.woff2') format('woff2'),
+        url('#{$font-path}/Georgia-Bold.woff') format('woff'),
+        url('#{$font-path}/Georgia-Bold.ttf') format('truetype'),
+        url('#{$font-path}/Georgia-Bold.svg#Georgia-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -74,12 +74,12 @@
 
 @font-face {
     font-family: 'Georgia';
-    src: url('fonts/Georgia.eot');
-    src: url('fonts/Georgia.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Georgia.woff2') format('woff2'),
-        url('fonts/Georgia.woff') format('woff'),
-        url('fonts/Georgia.ttf') format('truetype'),
-        url('fonts/Georgia.svg#Georgia') format('svg');
+    src: url('#{$font-path}/Georgia.eot');
+    src: url('#{$font-path}/Georgia.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Georgia.woff2') format('woff2'),
+        url('#{$font-path}/Georgia.woff') format('woff'),
+        url('#{$font-path}/Georgia.ttf') format('truetype'),
+        url('#{$font-path}/Georgia.svg#Georgia') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

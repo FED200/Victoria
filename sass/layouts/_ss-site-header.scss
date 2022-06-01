@@ -13,6 +13,8 @@
         right: 0;
         z-index: 999;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: $white;
+
     }
 
     &.sticky-header {
@@ -76,7 +78,11 @@
                 @include font-size(1rem);
                 transition: all 0.3s;
                 text-transform: capitalize;
+                color: $white;
+
+                @include media-breakpoint-up(lg){
                 color: $grayish-blue-1;
+                }
 
 
                 &:focus,

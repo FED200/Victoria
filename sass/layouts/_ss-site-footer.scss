@@ -1,7 +1,22 @@
 .site-footer {
+    position: relative;
+
     &.bg-cover {
         background-size: 50%;
         background-position: right;
+    }
+
+    &:before {
+        @include media-breakpoint-up(xl) {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            right: 0;
+            bottom: 0;
+            background: url('assets/images/footer-bg.png');
+            width: 457px;
+            height: 446px;
+        }
     }
 
     &__content {
@@ -108,8 +123,7 @@
     .social-icons {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        padding-left: 1rem;
+        align-items: center;         
 
         @include media-breakpoint-up(md) {
             padding-left: 1.5rem;
@@ -155,5 +169,7 @@
     .copyright {
         color: $grayish-blue-1;
         @include font-size(1rem);
+        display: inline-block;
+        line-height: 1.7;
     }
 }
