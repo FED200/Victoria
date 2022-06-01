@@ -11372,12 +11372,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   background-color: #F98169;
   color: #fff;
+  border: none;
   border-radius: 0;
   font-size: 1rem;
   padding: .75rem 1.25rem;
   min-width: 11.25rem;
   transition: all .3s ease-in-out;
   box-shadow: 0px 15px 29px rgba(249, 129, 105, 0.68);
+  border-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -11399,6 +11401,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background-color: #255A7E;
   box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled):focus {
+  background-color: #255A7E;
+  color: #fff;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .btn.btn-primary {
