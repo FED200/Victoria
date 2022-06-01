@@ -42,7 +42,7 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    centerMode: true,
+    // centerMode: true,
     infinite: true,
     responsive: [{
         breakpoint: 992,
