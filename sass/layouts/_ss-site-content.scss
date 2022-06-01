@@ -68,7 +68,7 @@
     align-items: center;
     text-align: center;
     min-height: auto;
-    padding: 2rem;
+    padding: 2rem 1rem;
 
     @include media-breakpoint-up(md) {
         min-height: 313px;
@@ -144,6 +144,7 @@
             border-radius: 13px 0 0 13px;
             padding: 1rem;
             background-color: rgba($grayish-blue-2, 0.20);
+            border-color: transparent;
 
             @include media-breakpoint-up(lg) {
                 padding: 1rem 1rem 1rem 2rem;
@@ -151,6 +152,10 @@
 
             @include media-breakpoint-up(xl) {
                 padding: 2rem 1rem 2rem 2rem;
+            }
+
+            &:focus{
+                border-color: transparent;
             }
 
             &::placeholder {

@@ -12200,7 +12200,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   text-align: center;
   min-height: auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 @media (min-width: 768px) {
@@ -12288,6 +12288,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 13px 0 0 13px;
   padding: 1rem;
   background-color: rgba(174, 178, 180, 0.2);
+  border-color: transparent;
 }
 
 @media (min-width: 992px) {
@@ -12300,6 +12301,10 @@ h1, h2, h3, h4, h5, h6 {
   .subscribe .form-control {
     padding: 2rem 1rem 2rem 2rem;
   }
+}
+
+.subscribe .form-control:focus {
+  border-color: transparent;
 }
 
 .subscribe .form-control::placeholder {
