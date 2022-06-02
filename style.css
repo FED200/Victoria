@@ -12371,7 +12371,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 13px 0 0 13px;
   padding: 1rem;
   background-color: rgba(174, 178, 180, 0.2);
-  border-color: transparent;
+  border-color: rgba(174, 178, 180, 0.2);
 }
 
 @media (min-width: 992px) {
@@ -12387,7 +12387,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .subscribe .form-control:focus {
-  border-color: transparent;
+  border-color: rgba(174, 178, 180, 0.2);
 }
 
 .subscribe .form-control::placeholder {

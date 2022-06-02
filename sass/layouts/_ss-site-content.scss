@@ -144,7 +144,7 @@
             border-radius: 13px 0 0 13px;
             padding: 1rem;
             background-color: rgba($grayish-blue-2, 0.20);
-            border-color: transparent;
+            border-color: rgba($grayish-blue-2, 0.20);
 
             @include media-breakpoint-up(lg) {
                 padding: 1rem 1rem 1rem 2rem;
@@ -155,7 +155,7 @@
             }
 
             &:focus{
-                border-color: transparent;
+                border-color: rgba($grayish-blue-2, 0.20);
             }
 
             &::placeholder {
