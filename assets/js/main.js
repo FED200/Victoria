@@ -30,7 +30,7 @@ $(document).ready(function () {
   //sticky-header
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop >= 20) {
+    if (scrollTop >= 100) {
       $('.site-header').addClass('sticky-header')
     } else {
       $('.site-header').removeClass('sticky-header');
